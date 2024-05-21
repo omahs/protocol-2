@@ -97,7 +97,7 @@ To re-build all packages on change:
 yarn watch
 ```
 
-To watch a specific package and all it's dependent packages:
+To watch a specific package and all its dependent packages:
 
 ```bash
 PKG=[NPM_PACKAGE_NAME] yarn watch
