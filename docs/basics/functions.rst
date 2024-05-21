@@ -116,7 +116,7 @@ These are the basic functions for using a `Limit Order <../basics/orders.html#li
 fillLimitOrder
 --------------
 
-Limit orders can be filled with the ``fillLimitOrder()`` or ``fillOrKillLimitOrder()`` functions on the Exchange Proxy. The address calling these function will be considered the "taker" of the order.
+Limit orders can be filled with the ``fillLimitOrder()`` or ``fillOrKillLimitOrder()`` functions on the Exchange Proxy. The address calling these functions will be considered the "taker" of the order.
 
 
 ``fillLimitOrder()`` fills a single limit order for **up to** ``takerTokenFillAmount``:
@@ -206,7 +206,7 @@ This function emits an `OrderCancelled <../basics/events.html#ordercancelled>`_ 
 cancelPairLimitOrders
 ---------------------
 
-This function cancels all limit orders created by the caller with with a maker and taker token pair and a ``salt`` field < the ``salt`` provided. Subsequent calls to this function with the same tokens must provide a ``salt`` >= the last call to succeed.
+This function cancels all limit orders created by the caller with a maker and taker token pair and a ``salt`` field < the ``salt`` provided. Subsequent calls to this function with the same tokens must provide a ``salt`` >= the last call to succeed.
 
 .. code-block:: solidity
 
@@ -491,7 +491,7 @@ This function emits an `OrderCancelled <../basics/events.html#ordercancelled>`_ 
 cancelPairRfqOrders
 -------------------
 
-This function cancels all RFQ orders created by the caller with with a maker and taker token pair and a ``salt`` field < the ``salt`` provided. Subsequent calls to this function with the same tokens must provide a ``salt`` >= the last call to succeed.
+This function cancels all RFQ orders created by the caller with a maker and taker token pair and a ``salt`` field < the ``salt`` provided. Subsequent calls to this function with the same tokens must provide a ``salt`` >= the last call to succeed.
 
 .. code-block:: solidity
 
@@ -856,7 +856,7 @@ This function cancels an ERC721 order using the order `nonce` field.
 batchCancelERC721Orders
 ----------------------------
 
-This function cancels an number of ERC721 order using the order `nonce` field.
+This function cancels a number of ERC721 order using the order `nonce` field.
 
 .. code-block:: solidity
 
@@ -1026,7 +1026,7 @@ A read function to return the order status. E.g whether it is filled, cancelled 
 getERC721OrderHash
 ----------------------------
 
-A read function to return the uniquie order hash.
+A read function to return the unique order hash.
 
 .. code-block:: solidity
 
