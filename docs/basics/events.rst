@@ -487,7 +487,7 @@ ERC1155OrderCancelled
 .. code-block:: solidity
 
     /// @dev Emitted whenever an `ERC1155Order` is cancelled.
-    /// @param orderHash The hash the order.
+    /// @param orderHash The hash of the order.
     /// @param maker The maker of the order.
     event ERC1155OrderCancelled(
         bytes32 orderHash,
